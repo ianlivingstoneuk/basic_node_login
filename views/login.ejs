@@ -1,0 +1,77 @@
+<head>
+    <title>App-Login</title>
+    <link rel="stylesheet" href="/assets/styles.css">
+</head>
+
+<div class="cont">
+    <form action="/login" method="post" autocomplete="false">
+        <div class="form sign-in">
+            <h2>Sign In</h2>
+            <label>
+                <span>Username</span>
+                <input type="text" name="uname" id="uname">
+            </label>
+            <label>
+                <span>Password</span>
+                <input type="password" name="pw" id="pw">
+            </label>
+            <button class="submit" type="submit">Sign In</button>
+            <p class="forgot-pass">Forgot Password ?</p>
+
+            <div class="social-media">
+                <ul>
+                    <li><img src="https://raw.githubusercontent.com/abo-elnoUr/public-assets/master/facebook.png">
+                    </li>
+                    <li><img src="https://raw.githubusercontent.com/abo-elnoUr/public-assets/master/twitter.png">
+                    </li>
+                    <li><img src="https://raw.githubusercontent.com/abo-elnoUr/public-assets/master/linkedin.png">
+                    </li>
+                    <li><img src="https://raw.githubusercontent.com/abo-elnoUr/public-assets/master/instagram.png">
+                    </li>
+                </ul>
+            </div>
+    </form>
+</div>
+
+<div class="sub-cont">
+    <form action="/register" method="post">
+        <div class="img">
+            <div class="img-text m-up">
+                <h2>New here?</h2>
+                <p>Sign up and discover great amount of new opportunities!</p>
+            </div>
+            <div class="img-text m-in">
+                <h2>One of us?</h2>
+                <p>If you already has an account, just sign in. We've missed you!</p>
+            </div>
+            <div class="img-btn">
+                <span class="m-up">Sign Up</span>
+                <span class="m-in">Sign In</span>
+            </div>
+        </div>
+        <div class="form sign-up">
+            <h2>Sign Up</h2>
+            <label>
+                <span>Username</span>
+                <input type="text" name="uname">
+            </label>
+            <label>
+                <span>Password</span>
+                <input type="password" name="pw">
+            </label>
+            <label>
+                <span>Confirm Password</span>
+                <input type="password">
+            </label>
+            <button type="submit" class="submit">Sign Up Now</button>
+        </div>
+    </form>
+</div>
+</div>
+
+<script>
+    document.querySelector('.img-btn').addEventListener('click', function () {
+        document.querySelector('.cont').classList.toggle('s-signup')
+    }
+    );
+</script>
